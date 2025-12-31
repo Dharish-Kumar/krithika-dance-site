@@ -1,0 +1,257 @@
+@import url("https://use.typekit.net/jbk2zer.css");
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.nav-lists{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 100px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+     z-index: 1000;
+}
+.nav-lists.scrolled{
+    background-color: #261118a8;
+    backdrop-filter: blur(8px);
+}
+.nav-lists .logo{
+    width:40%;
+}
+.nav-lists .logo img{
+    width:70px;
+}
+
+.menu-list{
+    width:60%;
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    margin:0;
+    padding:0;
+}
+.menu-item{
+    margin:0 20px;
+    list-style-type: none;
+}
+.menu-link{
+    color:#ffffff;
+    text-decoration: none;
+    font-family: arbotek-rounded, sans-serif;
+}
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active{
+    border-bottom:1px solid #ffffff;
+    color:#ffffff;
+}
+.active{
+    border-bottom:1px solid #ffffff;
+    color:#ffffff !important;
+}
+.menubtn{
+    display:none;
+    background: transparent;
+    border:none;
+    width:60%;
+}
+.menubtn:hover,
+.menubtn:active,
+.menubtn:focus-visible{
+     background: transparent;
+     outline:none;
+     border:none;
+     box-shadow: none;
+}
+.menubtn i{
+    font-size: 24px;
+    float:right;
+}
+
+/* =================About us==================== */
+
+main .hero{
+    background-image: url('../image/home-hero-1.jpg');
+    width:100%;
+    height:1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* =================About us==================== */
+
+.about-us{
+    width:100%;
+    height:auto;
+    background-color:#261118;
+    padding:60px 0;
+}
+.about-us img{
+    width:500px;
+    margin-bottom: 30px;
+}
+.about-us p{
+    color: #dfdfdf;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0px;
+}
+.about-us p>span{
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+
+
+
+
+
+@media screen and (min-width:1001px) and (max-width:1200px){
+    main .hero{
+        background-image: url('../image/home-hero-2.jpg');
+        height: 900px;
+    }
+    .nav-lists{
+        padding:5px 90px;
+    }
+    .nav-lists .logo{
+        width:20%;
+    }
+    .menu-list{
+        width:80%;
+    }
+    .menu-item{
+        margin:0 10px;
+    }
+    .about-us p{
+        font-size: 19px;
+    }
+    .about-us img{
+        width:450px;
+    }
+}
+@media screen and (min-width:801px) and (max-width:1000px){
+    main .hero{
+        background-image: url('../image/home-hero-2.jpg');
+        height: 900px;
+    }
+    .nav-lists{
+        padding:5px 80px;
+    }
+    .nav-lists .logo{
+        width:20%;
+    }
+    .nav-lists .logo img{
+        width:65px;
+    }
+    .menu-list{
+        width:80%;
+    }
+    .menu-item{
+        margin:0 17px;
+    }
+    .about-us p{
+        font-size: 18px;
+    }
+    .about-us p>span{
+        font-size: 20px;
+    }
+    .about-us img{
+        width:450px;
+    }
+}
+@media screen and (max-width:800px){
+    .menu-list{
+        display:none;
+    }
+    .menubtn{
+        display:block;
+    }
+}
+@media screen and (min-width:601px) and (max-width:800px){
+    main .hero{
+        background-image: url('../image/home-hero-2.jpg');
+        height: 900px;
+    }
+    .nav-lists{
+        padding:5px 50px;
+    }
+    .nav-lists .logo img{
+        width:65px;
+    }
+    .about-us p{
+        font-size: 17px;
+    }
+    .about-us p>span{
+        font-size: 20px;
+    }
+    .about-us img{
+        width:400px;
+    }
+}
+@media screen and (min-width:451px) and (max-width:600px){
+     main .hero{
+        background-image: url('../image/home-hero-3.jpg');
+        height: 65vh;
+    }
+    .nav-lists{
+        padding:10px 30px;
+    }
+     .nav-lists .logo img{
+        width:60px;
+    }
+    .about-us p{
+        font-size: 16px;
+    }
+    .about-us{
+        padding:60px 20px;
+    }
+     .about-us img{
+        width:400px;
+    }
+    .about-us p>span{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:450px){
+    main .hero{
+        background-image: url('../image/home-hero-3.jpg');
+        height: 65vh;
+    }
+    .nav-lists{
+        padding:10px 30px;
+    }
+     .nav-lists .logo img{
+        width:60px;
+    }
+    .about-us p{
+        font-size: 16px;
+    }
+    .about-us{
+        padding:60px 20px;
+    }
+    .about-us img{
+        width:350px;
+    }
+    .about-us p>span{
+        font-size: 18px;
+    }
+}
