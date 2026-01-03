@@ -10,6 +10,7 @@ body{
     margin:0;
     padding:0;
     font-family:Arial, Helvetica, sans-serif;
+    overflow-x: hidden !important;
 }
 
 .nav-lists{
@@ -84,6 +85,33 @@ body{
 }
 .offcanvas{
     width:80% !important;
+}
+.offcanvas-body{
+    padding:0 !important;
+}
+.menu-list-app{
+    padding:0 !important;
+    margin:0 !important;
+}
+.menu-list-app li{
+    list-style-type: none;
+    margin:5px 0;
+    padding:10px 30px;
+}
+.menu-list-app li a{
+    color:#000000;
+    font-family: arbotek-rounded, sans-serif;
+    text-decoration: none;
+}
+.menu-list-app .active{
+    background-color: #260102;
+    color:#ffffff !important;
+}
+.menu-list-app .active a{
+    color:#ffffff !important;
+}
+.offcanvas-header{
+    border-bottom:1px solid lightgrey;
 }
 
 /* =================banner sec==================== */
@@ -1013,8 +1041,138 @@ main .hero{
     }
 }
 
+/* ==================reach us============== */
+
+.reach-us{
+    /* background: #260102; */
+    background-image: url('../image/Reachus-web.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: auto;
+    padding:50px 0 70px 0;
+}
+.contact-details .container{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+.contact-details .left{
+    width:54%;
+}
+.reachus-heading{
+    width:500px;
+    margin-bottom: 30px;
+}
+.contact-details h2{
+    font-family: "Vast Shadow", serif;
+    color:#ffffff;
+    margin:20px 0;
+}
+.contact-details .email a{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    margin:10px 0;
+    padding:10px 0;
+}
+.contact-details .email a img{
+    width:30px;
+}
+.contact-details .email a p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:#d3d3d3;
+    margin:0px 10px;
+}
+.social-media{
+    margin:40px 0 10px 0;
+    padding:5px 0;
+}
+.social-media img{
+    width:30px;
+    height:30px;
+    margin:10px;
+}
+.facebook{
+    width:20px !important;
+    height:35px !important;
+}
 
 
+.contact-details .right{
+    width:46%;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+.submit-form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reachus-img img{
+    width:400px;
+    margin:50px 0 0 0;
+}
+.submit-form form{
+    width:100%;
+    display:flex;
+    align-items: start;
+}
+.row1{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+.row2{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+input, textarea{
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    font-size: 14px;
+    padding:7px 0;
+    text-indent: 10px;
+    margin:10px 0;
+    width:90%;
+}
+.row1 a{
+    background-color: #f54e5f;
+    color:#ffffff;
+    width:40%;
+    padding:5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin:10px 0;
+}
+
+/* ==================map-loation============== */
+
+footer{
+    background: #260102;
+}
+.map-location iframe{
+    width:100%;
+    height:500px;
+}
+.copright{
+    padding:20px 0px;
+    width:100%;
+}
+.copright p{
+    padding:10px 0;
+    margin:10px 0;
+    color:#cdcdcd;
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 /* =================media query==================== */
@@ -1058,6 +1216,12 @@ main .hero{
     }
     .heading-gallery{
         width:400px;
+    }
+    .map-location iframe{
+        height:450px;
+    }
+    .reachus-heading {
+        width: 400px;
     }
 }
 @media screen and (min-width:801px) and (max-width:1000px){
@@ -1105,6 +1269,35 @@ main .hero{
     }
     .heading-gallery{
         width:400px;
+    }
+    .map-location iframe{
+        height:420px;
+    }
+    .reachus-heading {
+        width: 350px;
+    }
+    .reach-us{
+        background-image: url('../image/Reachus-a.jpg');
+    }
+    .contact-details .container{
+        flex-direction: column;
+    }
+    .left{
+        width:90% !important;
+    }
+    .right{
+        width:90% !important;
+        margin-top: 200px;
+    }
+    .reachus-heading {
+        width: 300px;
+    }
+    .reachus-img img {
+        width: 300px;
+        margin: 50px 0 40px 0;
+    }
+    .social-media {
+        margin: 10px 0 10px 0;
     }
 }
 @media screen and (max-width:800px){
@@ -1167,6 +1360,33 @@ main .hero{
     .heading-gallery{
         width:300px;
     }
+    .map-location iframe{
+        height:400px;
+    }
+    .reach-us{
+        background-image: url('../image/Reachus-a.jpg');
+    }
+    .contact-details .container{
+        flex-direction: column;
+    }
+    .left{
+        width:90% !important;
+    }
+    .right{
+        width:90% !important;
+        margin-top: 90px;
+    }
+    .reachus-heading {
+        width: 350px;
+    }
+    .reachus-img img {
+        width: 300px;
+        margin: 50px 0 40px 0;
+    }
+    .social-media {
+        margin: 10px 0 10px 0;
+    }
+
 }
 @media screen and (min-width:451px) and (max-width:600px){
      main .hero{
@@ -1224,6 +1444,32 @@ main .hero{
         width:300px;
         margin:50px 0;
     }
+    .map-location iframe{
+        height:300px;
+    }
+    .reach-us{
+        background-image: url('../image/Reachus-a.jpg');
+    }
+    .contact-details .container{
+        flex-direction: column;
+    }
+    .left{
+        width:90% !important;
+    }
+    .right{
+        width:99% !important;
+        margin-top: 90px;
+    }
+    .reachus-heading {
+        width: 300px;
+    }
+    .reachus-img img {
+        width: 300px;
+        margin: 50px 0 40px 0;
+    }
+    .social-media {
+        margin: 10px 0 10px 0;
+    }
 }
 @media screen and (max-width:450px){
     main .hero{
@@ -1280,5 +1526,31 @@ main .hero{
     .heading-gallery{
         width:300px;
         margin:50px 0;
+    }
+    .map-location iframe{
+        height:300px;
+    }
+    .reach-us{
+        background-image: url('../image/Reachus-a.jpg');
+    }
+    .contact-details .container{
+        flex-direction: column;
+    }
+    .left{
+        width:90% !important;
+    }
+    .right{
+        width:100% !important;
+        margin-top: 90px;
+    }
+    .reachus-heading {
+        width: 300px;
+    }
+    .reachus-img img {
+        width: 300px;
+        margin: 50px 0 40px 0;
+    }
+    .social-media {
+        margin: 10px 0 10px 0;
     }
 }
