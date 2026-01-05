@@ -28,7 +28,7 @@ body{
      z-index: 1000;
 }
 .nav-lists.scrolled{
-    background-color: #261118a8;
+    background-color: #261118e0;
     backdrop-filter: blur(8px);
 }
 .nav-lists .logo{
@@ -829,10 +829,10 @@ main .hero{
 
   @media only screen and (max-width:740px){
     .gallery {
-        height: 55vh !important;
+        height: 50vh !important;
     }
     .bbc-gallerysub {
-        left: 5% !important;
+        left: 12% !important;
     }
   }
 
@@ -933,7 +933,7 @@ main .hero{
 /* =================Video sec==================== */
 
 .video-sec{
-    padding:60px 0;
+    padding:0px 0;
 }
 .video-caontainer{
     background-image: url('../image/video-bg.jpg');
@@ -964,6 +964,7 @@ main .hero{
 
 .bbr_testimonial {
     padding: 70px;
+    margin-bottom:40px;
 }
 .swiper {
     width: 100%;
