@@ -227,6 +227,9 @@ main .hero{
     .aboutus-grid .row{
         flex-direction: column-reverse;
     }
+    .img-wrap img {
+        width: 80% !important;
+    }
 }
 @media screen and (max-width:450px){
     main .hero{
@@ -241,5 +244,8 @@ main .hero{
     }
     .aboutus-grid .row{
         flex-direction: column-reverse;
+    }
+    .img-wrap img {
+        width: 80% !important;
     }
 }
