@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/jbk2zer.css");
 @import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url(about.css);
 
 *{
     box-sizing: border-box;
@@ -933,7 +934,7 @@ main .hero{
 /* =================Video sec==================== */
 
 .video-sec{
-    padding:0px 0;
+    padding:90px 0 0 0;
 }
 .video-caontainer{
     background-image: url('../image/video-bg.jpg');
@@ -1471,6 +1472,9 @@ footer{
     .social-media {
         margin: 10px 0 10px 0;
     }
+    .submit-form form {
+        margin-top: 30px;
+    }
 }
 @media screen and (max-width:450px){
     main .hero{
@@ -1553,5 +1557,8 @@ footer{
     }
     .social-media {
         margin: 10px 0 10px 0;
+    }
+    .submit-form form {
+        margin-top: 30px;
     }
 }
