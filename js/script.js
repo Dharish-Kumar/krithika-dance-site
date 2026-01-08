@@ -13,6 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//Scroll bg change for navbar on gallery page
+
+document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector(".nav-listss");
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            nav.classList.add("scrolled");
+        } else {
+            nav.classList.remove("scrolled");
+        }
+    });
+});
+
 
 //testimonial swipper
 
